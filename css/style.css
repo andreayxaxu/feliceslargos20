@@ -17,7 +17,6 @@ body {
   overflow: hidden;
 }
 
-
 /* ============================================
    INDEX.HTML
    ============================================ */
@@ -113,6 +112,48 @@ body {
 
 .pag1-img:hover {
   opacity: 1;
+}
+
+/* ============================================
+   TÍTULO EN FILAS (FELIZ CUMPLEAÑOS ABRIL)
+   ============================================ */
+.letras-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+  transform: translateY(0); 
+  margin-bottom: 30px; /* Añadimos espacio entre las letras y el lazo */
+  z-index: 10;
+}
+
+.fila-palabra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px; /* Espacio entre cada letra */
+}
+
+.letra-img {
+  width: 50px; /* Ajusta el ancho de tus imágenes */
+  height: auto;
+  border-radius: 8px; /* Opcional: bordes redondeados */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Opcional: pequeña sombra para dar relieve */
+}
+
+/* EFECTO HOVER PARA CADA LETRA */
+.letra-img:hover {
+  transform: scale(1.2) translateY(-10px) rotate(5deg); /* Se agranda, sube un poco y gira */
+  filter: brightness(1.1); /* Se hace un poco más brillante */
+}
+
+.pag1-link {
+  margin-top: 0; 
+  text-decoration: none;
+  z-index: 5; 
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s ease;
 }
 
 /* ============================================
