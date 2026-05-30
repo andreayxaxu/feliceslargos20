@@ -342,16 +342,16 @@ body {
   0% {
     transform: translateY(0);
   }
-  40% {
-    /* Sube de forma fluida hasta el punto más alto */
+  20% {
+    /* ¡SUBIDA RÁPIDA! Impulso explosivo hacia arriba */
     transform: translateY(-50px);
   }
-  55% {
-    /* ¡BAJADA RÁPIDA! Cae con fuerza a su posición inicial */
+  35% {
+    /* ¡BAJADA RÁPIDA! Cae a plomo inmediatamente */
     transform: translateY(0);
   }
   100% {
-    /* Se queda quieto en el suelo descansando un momento */
+    /* Pausa estática en el suelo antes del siguiente ciclo */
     transform: translateY(0);
   }
 }
@@ -360,12 +360,12 @@ body {
   0% {
     transform: translateY(0) rotate(-10deg);
   }
-  40% {
-    /* Acompaña al gato hasta arriba */
+  20% {
+    /* Sube rápido a la par que el gato */
     transform: translateY(-45px) rotate(-10deg);
   }
-  55% {
-    /* Baja rápido a la par que el gato */
+  35% {
+    /* Baja rápido a su posición original */
     transform: translateY(0) rotate(-10deg);
   }
   100% {
